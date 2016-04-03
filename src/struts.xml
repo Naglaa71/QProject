@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="Login"  extends="struts-default">
+		<default-action-ref name="Login"></default-action-ref>
+		<action name="Login">
+			<result>/LoginForm.jsp</result>
+		</action>
+		<action name="AuthenticateUser" class="gov.hud.QassProject.actions.AuthenticateUser" method="execute">
+			<result name="success">/MainMenuForm.jsp</result>
+			<result name="input">/LoginForm.jsp</result>
+		</action>
+		<action name="LoginAction" class="gov.hud.QassProject.actions.LoginAction" method="chooseUserMenu">
+			<result name="success">/InternalUserMenu.jsp</result>
+			<result name="input">/ExternalUserMenu.jsp</result>
+		</action>
+	</package>
+	
+	
+	<package name="UIIRegistration" extends="struts-default">
+		<action name="CreateNewProfile" class="gov.hud.QassProject.actions.SelectTranTypeAction" method="createNewProfile">
+			<result name="success">/SelectClassificationForm.jsp</result>
+		</action>
+		<action name="RecallUII" class="gov.hud.QassProject.actions.SelectTranTypeAction" method="recallUIIProfile">
+			<result name="success">/SelectClassificationRecall.jsp</result>
+		</action>
+		<action name="ClassificationIPA" class="gov.hud.QassProject.actions.SetOfficeType" method="setOfficeTypeIPA">
+			<result name="success">/CreateOrRecallProfile.jsp</result>
+		</action>
+		<action name="ClassificationSAO" class="gov.hud.QassProject.actions.SetOfficeType" method="setOfficeTypeSAO">
+			<result name="success">/CreateOrRecallProfile.jsp</result>
+		</action>
+		<action name="ClassificationRecallIPA" class="gov.hud.QassProject.actions.SetOfficeType" method="setOfficeTypeRecallIPA">
+			<result name="success">/RecallUIIProfile.jsp</result>
+		</action>
+		<action name="ClassificationRecallSAO" class="gov.hud.QassProject.actions.SetOfficeType" method="setOfficeTypeRecallSAO">
+			<result name="success">/RecallUIIProfile.jsp</result>
+		</action>
+		
+		<action name="CreateOrRecallAction" class="gov.hud.QassProject.actions.CreateOrRecallAction">
+			<result name="success">/RegisterUIIProfile.jsp</result>
+			<result name="input">/CreateOrRecallProfile.jsp</result>
+		</action>
+	
+		<action name="UpdateExistingProfileEntryAction"  >
+			<result name="success">/UpdateExistingUIIEntryForm.jsp</result>
+		</action>
+		
+		<action name="UpdateExistingProfileAction" class="gov.hud.QassProject.actions.UpdateExistingProfileAction" >
+			<result name="success">/RegisterUIIProfile.jsp</result>
+			<result name="input">/UpdateExistingUIIEntryForm.jsp</result>
+		</action>
+		
+		
+		<action name="RecallUIIAction" class="gov.hud.QassProject.actions.RecallUIIAction" >
+			<result name="success">/VerifyUIIProfile.jsp</result>
+			<result name="input">/RecallUIIProfile.jsp</result>
+		</action>
+		
+		<action name="ConfirmProfileAction" class="gov.hud.QassProject.actions.ConfirmProfileAction" >
+			<result name="success">/ConfirmUIIProfile.jsp</result>
+			<result name="input">/RegisterUIIProfile.jsp</result>
+			
+		</action>
+		<action name="VerifyProfileAction" class="gov.hud.QassProject.actions.VerifyProfileAction">
+			<result name="success">/VerifyUIIProfile.jsp</result>
+			<result name="input">/ConfirmUIIProfile.jsp</result>
+			
+		</action>
+		
+	
+		
+		 
+		
+	</package>
+	
+	
+</struts>

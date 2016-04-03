@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/ConPoolQass">
+    <!-- <Resource name="jdbc/Qass" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="reacs" password="d3F4Ult!" driverClassName="oracle.jdbc.driver.OracleDriver"
+               url="jdbc:oracle:thin:@hwvaldd4266:1521:P232PROD"/> -->
+     <ResourceLink global="jdbc/Qass" name="jdbc/Qass" type="oracle.jdbc.pool.OracleDataSource"/>
+</Context>

@@ -1,0 +1,250 @@
+<style
+ 
+type
+="text/css"
+ 
+title
+="standard"
+>
+{
+}
+A, A:LINK {
+	font-weight: bold;
+	color: #990000
+}
+
+A.leftnavitem, A.leftnavitem:ACTIVE, A.leftnavitem:VISITED {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+A.leftnavitem:HOVER {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+A.leftnavparent, A.leftnavparent:VISITED, A.leftnavparent:ACTIVE {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+A.leftnavparent:HOVER {
+	text-decoration: underline;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+A.leftnavhead, A.leftnavhead:ACTIVE, A.leftnavhead:VISITED {
+	text-decoration: none;
+	color: #FF9900;
+}
+
+A.leftnavhead:HOVER {
+	text-decoration: underline;
+	color: #FF9900;
+}
+
+A.bodynavitem {
+	text-decoration: underline;
+	color: #990000;
+	font-weight: normal;
+}
+
+A.crumbs {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+A:HOVER {
+	color: #CC0000;
+}
+
+A:ACTIVE {
+	color: #CC0000;
+}
+
+A.cfbutton {
+	text-decoration: none;
+}
+
+A.cfbutton:HOVER {
+	text-decoration: underline;
+}
+
+H1.print {
+	margin-bottom: 0px;
+}
+
+H2 {
+	color: #990000;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+H3 {
+	color: #990000;
+	font-weight: bold;
+	font-size: 90%;
+}
+
+H4 {
+	font-weight: bold;
+	font-size: 90%;
+}
+
+A.alphatoc {
+	color: Black;
+	text-decoration: none;
+}
+
+A.alphatoc:HOVER {
+	background-color: #ffd590;
+	color: Black;
+}
+
+table#EmergencyInfo A:LINK {
+	font-weight: bold;
+	color: #FF9900
+}
+
+table {
+	display: table;
+}
+
+table.border {
+	border: solid 1px light gray;
+}
+
+table.message {
+	border: solid 1px light gray;
+	color: blue;
+}
+
+td {
+	display: td;
+	font-size: 10pt;
+	valign: top;
+}
+
+td.border {
+	border: solid 1px light gray;
+	font-size: 10pt;
+	valign: top;
+}
+
+td.contenthead {
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+	background-color: "#990000"
+}
+
+td.head {
+	border: solid 1px light gray;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+	background-color: "#990000"
+}
+
+td.shaded {
+	border: solid 1px light gray;
+	font-size: 10pt;
+	background-color: "#FFF5dc"
+}
+
+td.subsection {
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: "#FFF5dc";
+	color
+	="#ffaa00"
+}
+
+td.subsectionhead {
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: "#990000";
+	color
+	="#ffaa00"
+}
+
+td.footerText {
+	font-size: 8pt
+}
+
+td.readonly {
+	font-size: 10pt;
+	font-weight: bold;
+	color: black;
+}
+
+td.readonlyitalic {
+	font-size: 10pt;
+	font-weight: regular;
+	font-style: italic;
+	color: black;
+}
+
+td.readonlyborder {
+	font-size: 10pt;
+	font-weight: bold;
+	color: black;
+	border: solid 1px light gray;
+}
+
+td.note {
+	font-size: 8pt;
+	color: blue;
+}
+
+.ControlBorder {
+	border-style: solid;
+	border-width: 1px;
+	border-color: "#d3d3d3";
+}
+
+.ReqdControl {
+	border-style: solid;
+	border-width: 1px;
+	border-color: "#d3d3d3";
+	background-color: #ffffee;
+}
+
+.ButtonBorder {
+	border-style: solid;
+	border-width: 2px;
+	border-color: gray;
+	background-color: "#d3d3d3";
+}
+
+body {
+	background-color: #fff;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.odd {
+	background-color: white;
+}
+
+.even {
+	background-color: buttonface;
+}
+
+.errorMessage {
+	color: red;
+}
+
+.form-page input[type="text"] {
+	border: none;
+	background-color: transparent;
+	/* Other stuff: font-weight, font-size */
+}
+
+#input {
+	background-color: transparent;
+}
+
+</style>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+  		
+<validators>
+	<field name="audit_firm_tax_id" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>EIN Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			 <param name="minLength">9</param>
+			 <param name="maxLength">9</param>
+			 <param name="trim">true</param>
+			   <message>
+			       EIN Filed Can't be less/more than 9 digits
+			   </message>
+		</field-validator>
+		<field-validator type="NumericEntry" short-circuit="true">
+			<message>EIN Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_zip_code" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<message>Zip Code Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			 <param name="minLength">5</param>
+			 <param name="maxLength">5</param>
+			 <param name="trim">true</param>
+			   <message>
+			       Zip Code Can't be less/more than 5 digits
+			   </message>
+		</field-validator>
+		 <field-validator type="NumericEntry" short-circuit="true">
+			<message>Zip Code Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_name" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Office Name Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_city" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Office City Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_address_line_1" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Office Address1 Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>	
+	<field name="audit_firm_state" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Office State Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<!-- <field name="audit_firm_zip_code_ext" >
+		<field-validator type="NumericEntry" short-circuit="false">
+			<message>Zip Code Extension Field Accepts Only Numeric Values</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			 <param name="minLength">4</param>
+			 <param name="maxLength">4</param>
+			 <param name="trim">true</param>
+			   <message>
+			       Zip Code Extension Can't be less/more than 4 digits
+			   </message>
+		</field-validator>
+	</field> -->
+	<field name="audit_firm_phone_num" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Office Phone Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="NumericEntry" short-circuit="true">
+			<message>Audit Office Phone Field Accepts Only Numeric Values</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			 <param name="minLength">10</param>
+			 <param name="maxLength">10</param>
+			 <param name="trim">true</param>
+			   <message>
+			       Office Phone Number should be 10 digits
+			   </message>
+		</field-validator>
+	</field>
+	<field name="auditor_contact_first_name" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Contact First Name Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<field name="auditor_contact_last_name" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Contact Last Name Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<field name="auditor_contact_title" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Contact Title Field Doesn't Accept Empty Value</message>
+		</field-validator>
+	</field>
+	<field name="auditor_contact_phone_num" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Audit Contact Phone Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="NumericEntry" short-circuit="true">
+			<message>Audit Contact Phone Field Accepts Only Numeric Values</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			 <param name="minLength">10</param>
+			 <param name="maxLength">10</param>
+			 <param name="trim">true</param>
+			   <message>
+			       Contact Phone Number should be 10 digits
+			   </message>
+		</field-validator>
+	</field>
+	<!-- <field name="auditor_contact_phone_ext_num" >
+		<field-validator type="NumericEntry" short-circuit="false">
+			<message>Audit Contact Phone Extension Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field> -->
+	<!-- <field name="auditor_contact_fax_num" >
+		<field-validator type="NumericEntry" short-circuit="false">
+			<message>Audit Contact Fax Number Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field> -->
+	<field name="auditor_contact_email" >
+		<field-validator type="email" short-circuit="true">
+			<message>Audit Contact Email should be in the right format</message>
+		</field-validator>
+	</field>
+</validators>

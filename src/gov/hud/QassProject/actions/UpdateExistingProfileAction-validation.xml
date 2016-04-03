@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+  		
+<validators>
+	<field name="audit_firm_id" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>UII Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			 <param name="minLength">5</param>
+			 <param name="maxLength">5</param>
+			 <param name="trim">true</param>
+			   <message>
+			       UII Filed Can't be less/more than 5 digits
+			   </message>
+		</field-validator>
+		<field-validator type="NumericEntry" short-circuit="true">
+			<message>UII Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_tax_id" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>EIN Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			 <param name="minLength">9</param>
+			 <param name="maxLength">9</param>
+			 <param name="trim">true</param>
+			   <message>
+			       EIN Filed Can't be less/more than 9 digits
+			   </message>
+		</field-validator>
+		<field-validator type="NumericEntry" short-circuit="true">
+			<message>EIN Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field>
+	<field name="audit_firm_zip_code" >
+		<field-validator type="requiredstring" short-circuit="true">
+			<message>Zip Code Field Doesn't Accept Empty Value</message>
+		</field-validator>
+		<field-validator type="stringlength" short-circuit="true">
+			 <param name="minLength">5</param>
+			 <param name="maxLength">5</param>
+			 <param name="trim">true</param>
+			   <message>
+			       Zip Code Can't be less/more than 5 digits
+			   </message>
+		</field-validator>
+		 <field-validator type="NumericEntry" short-circuit="true">
+			<message>Zip Code Field Accepts Only Numeric Values</message>
+		</field-validator>
+	</field>
+	
+</validators>

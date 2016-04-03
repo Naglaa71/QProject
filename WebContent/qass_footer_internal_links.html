@@ -1,0 +1,29 @@
+<table align="center" width="600" border="0" summary="footer links">
+	<tbody>
+		<tr>
+			<td>
+				<!--- Return to the top of the page ---> <FONT FACE="ARIAL" SIZE=-1><A
+					HREF="#TOP">Top of Page</A>&nbsp;| <!--- This is the User Guide for the system --->
+					&nbsp; <a href="./help/w_QASS_user_guide_internal.pdf"
+					target="_new"><font face="arial" size="2">User Guide</font></a> <!--- this is the QASS hompage --->
+					&nbsp; | <a
+					href="http://www.hud.gov/offices/reac/products/prodqass.cfm"> <font
+						face="arial" size="2">QASS Homepage</font></a> <!--- Display if QASS Policies and Procedures has been saved --->
+					<cfif ((m_role EQ "Y") OR (d_role EQ "Y") OR (a_roleEQ "Y"))>
+					&nbsp;|&nbsp;<a
+						href="http://hudatwork.hud.gov/po/reac/products/qass/qass_admin_files.cfm"
+						target="_blank">Policies and Procedures</a> </cfif>
+					<HR ALIGN="center" width="600" SIZE=1>
+			</td>
+
+		</tr>
+	</tbody>
+
+	<tbody>
+		<TR>
+			<TD colspan="2"><FONT FACE="ARIAL" SIZE=-1> <!--- Link gives the ability for the end user to logout through the WASS application -Metzy c25450 --->
+					&nbsp;|&nbsp;<A HREF="MainMenuForm.jsp"><font
+						size="2" face="arial">Exit QASS</font></A></TD>
+		</TR>
+	</tbody>
+</table>

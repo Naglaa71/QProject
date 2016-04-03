@@ -1,0 +1,70 @@
+body{
+	FONT-SIZE: 16px;
+	FONT-FAMILY: arial, helvetica;
+}
+Title{
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Verdana;
+}
+A.upload{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    color: black;
+    BORDER-BOTTOM: medium none;
+    TEXT-DECORATION: none
+}
+A.upload:link
+{
+    color: black;
+    TEXT-DECORATION: none
+}
+A.upload:visited
+{
+    color: black;
+    TEXT-DECORATION: none
+}
+A.upload:active
+{
+    color: black;
+    TEXT-DECORATION: none
+}
+A.upload:hover
+{
+    COLOR: blue;
+    TEXT-DECORATION: none
+}
+.Display 
+{
+	TEXT-ALIGN: center;BORDER-RIGHT:  0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; 
+	BORDER-BOTTOM:  0px; 
+} 
+.cooper 
+{
+	TEXT-ALIGN: center;BORDER-RIGHT:  0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; 
+	BORDER-BOTTOM:  0px; 
+} 
+.FolderOn{
+	cursor: pointer;
+	cursor: hand;
+}
+.FolderOff{
+	cursor: pointer;
+	cursor: hand;
+}
+.branch{
+	display: none;
+	margin-left: 16px;
+}
+.branchStart{
+	display: block;
+	margin-left: 16px;
+}
+.FolderTextOn{
+	color: white;
+  background-color: #3333CC;
+}
+.FolderTextOff{
+	color: black;
+  background-color: ;
+}
